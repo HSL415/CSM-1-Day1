@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Counselling Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .sub-header {
+      text-align: center;
+      color: #333;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      background: #004080;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #777;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .half {
+      flex: 1;
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN (A)</h1>
+    <div class="sub-header">Student Profile Form</div>
+
+    <section>
+      <div class="section-title">Student Profile</div>
+      <div class="form-grid">
+        <div>
+          <label>HT Number</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Name of Student (as per SSC)</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Branch</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Date of Birth (as per SSC)</label>
+          <input type="date">
+        </div>
+        <div>
+          <label>AADHAR Number</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Mobile No. (Self)</label>
+          <input type="tel">
+        </div>
+        <div>
+          <label>Email ID</label>
+          <input type="email">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Educational Details</div>
+      <div class="form-grid">
+        <div>
+          <label>SSC / CBSE % Marks</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Grade</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>School of Study & Place</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Inter / Diploma % Marks</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Grade</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>College of Study & Place</label>
+          <input type="text">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Qualifying Examination Details</div>
+      <div class="form-grid">
+        <div><label>EAMCET - HT No</label><input type="text"></div>
+        <div><label>Year</label><input type="text"></div>
+        <div><label>Rank</label><input type="text"></div>
+        <div><label>JEE - HT No</label><input type="text"></div>
+        <div><label>Year</label><input type="text"></div>
+        <div><label>Rank</label><input type="text"></div>
+        <div><label>ECET - HT No</label><input type="text"></div>
+        <div><label>Year</label><input type="text"></div>
+        <div><label>Rank</label><input type="text"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Admission Details</div>
+      <div class="form-grid">
+        <div><label>Category of Admission</label><select><option>EAMCET</option><option>SPOT</option><option>ECET</option></select></div>
+        <div><label>Category</label><select><option>Cat A</option><option>Cat B</option></select></div>
+        <div><label>Nationality & Religion</label><input type="text"></div>
+        <div><label>Caste & Category</label><input type="text"></div>
+        <div><label>State to which belongs</label><input type="text" placeholder="Example - AP"></div>
+        <div><label>AP Fee Reimbursement Scheme</label><select><option>YES</option><option>NO</option><option>EWS</option></select></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Parent Details</div>
+      <div class="row">
+        <div class="half">
+          <label>Father's Name</label>
+          <input type="text">
+          <label>Qualification</label>
+          <input type="text">
+          <label>Occupation</label>
+          <input type="text">
+          <label>Annual Income</label>
+          <input type="text">
+          <label>Landline No</label>
+          <input type="text">
+          <label>Mobile No</label>
+          <input type="tel">
+          <label>Email ID</label>
+          <input type="email">
+        </div>
+        <div class="half">
+          <label>Mother's Name</label>
+          <input type="text">
+          <label>Qualification</label>
+          <input type="text">
+          <label>Occupation</label>
+          <input type="text">
+          <label>Annual Income</label>
+          <input type="text">
+          <label>Landline No</label>
+          <input type="text">
+          <label>Mobile No</label>
+          <input type="tel">
+          <label>Email ID</label>
+          <input type="email">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Addresses</div>
+      <div class="row">
+        <div class="half">
+          <label>Permanent Address</label>
+          <input type="text">
+        </div>
+        <div class="half">
+          <label>Contact Address</label>
+          <input type="text">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Hostel & Local Guardian</div>
+      <div class="row">
+        <div class="half">
+          <label>Hostel Name</label>
+          <input type="text">
+          <label>Address</label>
+          <input type="text">
+          <label>Phone No.</label>
+          <input type="text">
+          <label>Mobile No.</label>
+          <input type="text">
+        </div>
+        <div class="half">
+          <label>Local Guardian Name</label>
+          <input type="text">
+          <label>Address</label>
+          <input type="text">
+          <label>Phone No.</label>
+          <input type="text">
+          <label>Mobile No.</label>
+          <input type="text">
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      © Gayatri Vidya Parishad College of Engineering for Women (A), Visakhapatnam
+    </div>
+  </div>
+</body>
+</html>
